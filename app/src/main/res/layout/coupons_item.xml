@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="1dp"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <androidx.cardview.widget.CardView
+      android:layout_width="300dp"
+      android:layout_height="90dp"
+      app:cardCornerRadius="6dp"
+      app:cardElevation="1dp"
+      app:cardMaxElevation="2dp"
+      android:layout_centerInParent="true">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              android:layout_centerHorizontal="true"
+              android:id="@+id/coupon_banner"
+              android:scaleType="centerCrop"
+              android:src="@drawable/banner2"/>
+<!--          text with banner-->
+      </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
