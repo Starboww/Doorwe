@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sd_home_menu"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/sd_aboutus"
+            android:icon="@drawable/group"
+            android:title="About Us" />
+        <item
+            android:id="@+id/sd_customer_care"
+            android:icon="@drawable/customer_care"
+            android:title="Customer Care" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Authentication">
+            <menu>
+                <item
+                    android:id="@+id/sd_login_menu"
+                    android:icon="@drawable/login"
+                    android:title="Login" />
+            </menu>
+        </item>
+
+    </group>
+    <item android:title="sharing">
+        <menu>
+            <item
+                android:id="@+id/sd_share_menu"
+                android:icon="@drawable/share_icon"
+                android:title="Share" />
+
+        </menu>
+
+    </item>
+</menu>

@@ -32,8 +32,6 @@ public class FoodCategoryAdapter extends RecyclerView.Adapter<FoodCategoryAdapte
             image = itemView.findViewById(R.id.image);
             name= itemView.findViewById(R.id.name);
         }
-
-
     }
 
     @NonNull
