@@ -3,6 +3,7 @@
 <item android:id="@+id/homeID"
     android:icon="@drawable/home"
     android:title="Home"
+
     android:visible="true"/>
 
 
@@ -10,6 +11,7 @@
     <item android:id="@+id/OfferID"
         android:icon="@drawable/discount"
         android:title="Offers"
+        android:onClick="offers_intent"
         android:visible="true"/>
 
     <item android:id="@+id/heartID"

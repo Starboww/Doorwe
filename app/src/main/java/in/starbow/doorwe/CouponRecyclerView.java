@@ -32,12 +32,13 @@ public class CouponRecyclerView extends RecyclerView.Adapter<CouponRecyclerView.
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-       public ImageView imageView;
+        ImageView imageView;
 
         public ViewHolder(View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.coupon_banner);
             //TODO: OnClick banner
+
         }
     }
     public CouponRecyclerView(List<CouponItem>itemList)

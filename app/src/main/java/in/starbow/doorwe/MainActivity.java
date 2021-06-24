@@ -9,8 +9,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -19,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
      private List<FoodcategoryItem> FooditemList = new ArrayList<>();
      private List<CouponItem>CouponItemList=new ArrayList<>();
      private List<SetMenuItem>setMenuItemlist=new ArrayList<>();
@@ -88,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+
     }
 
     private void prepareMenu() {
@@ -128,5 +133,10 @@ public class MainActivity extends AppCompatActivity {
         FooditemList.add(item);
         mAdapter.notifyDataSetChanged();
         foodCategoryRecyclerView.setAdapter(mAdapter);
+    }
+
+    public void offers_intent(MenuItem item) {
+        Intent intent= new Intent(this,offers_activity.class);
+        startActivity(intent);
     }
 }
