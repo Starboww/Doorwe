@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -16,6 +17,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -84,15 +86,27 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.sd_home_menu:
                         Toast.makeText(navigationView.getContext(),"This is Home",Toast.LENGTH_SHORT);
+                        break;
+                    case R.id.sd_logOut_menu:
+                        getLogOut();
+                        break;
                        //TODO: ADD more cases
+
                 }
-                return true;
+                return false;
             }
         });
 
 
 
 
+    }
+
+    private void getLogOut() {
+        FirebaseAuth.getInstance().signOut();
+        Intent out= new Intent(this,UserCredential.class);
+        startActivity(out);
+        finish();
     }
 
     private void prepareMenu() {
