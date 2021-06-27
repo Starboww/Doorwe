@@ -19,9 +19,9 @@
         <item android:title="Authentication">
             <menu>
                 <item
-                    android:id="@+id/sd_login_menu"
+                    android:id="@+id/sd_logOut_menu"
                     android:icon="@drawable/login"
-                    android:title="Login" />
+                    android:title="Logout" />
             </menu>
         </item>
 
