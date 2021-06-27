@@ -13,6 +13,9 @@
             android:id="@+id/sd_customer_care"
             android:icon="@drawable/customer_care"
             android:title="Customer Care" />
+        <item android:id="@+id/sd_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings"/>
 
     </group>
     <group android:checkableBehavior="single">
